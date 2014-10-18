@@ -270,4 +270,32 @@ void TiJianWidget::initRightCenterSecond()
 
 void TiJianWidget::initRightBottom()
 {
+	QLabel *iconLabel = new QLabel();
+	QPixmap iconPixmap(":/contentWidget/cloud");
+	iconLabel->setPixmap(iconPixmap);
+	iconLabel->setFixedSize(iconPixmap.size());
+
+	QLabel *connectLabel = new QLabel();
+	connectLabel->setText(tr("connect success"));
+
+	QLabel *versionLabel = new QLabel();
+	versionLabel->setText(tr("version"));
+	
+	QPushButton *upgradeButton = new QPushButton();
+	QPixmap upgradePixmap(":/contentWidget/version");
+	upgradeButton->setIcon(upgradePixmap);
+	upgradeButton->setIconSize(upgradePixmap.size());
+	upgradeButton->setFixedSize(20, 20);
+	upgradeButton->setObjectName("transparentButton");
+
+	QHBoxLayout *mainLayout = new QHBoxLayout();
+	mainLayout->addWidget(iconLabel);
+	mainLayout->addWidget(connectLabel);
+	mainLayout->addStretch();
+	mainLayout->addWidget(versionLabel);
+	mainLayout->addWidget(upgradeButton);
+	mainLayout->setSpacing(5);
+	mainLayout->setContentsMargins(10, 0, 10, 0);
+
+	rightBottomWidget_->setLayout(mainLayout);
 }
