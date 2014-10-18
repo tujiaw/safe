@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{a3eedbba-9724-435e-a72f-d3664fadf76e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{c0fa164d-d92c-46e7-a325-883796541bb3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DropWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DropWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DropWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PushButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PushButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ToolButton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ToolButton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_safe.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_StackedWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_StackedWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="StackedWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TiJianWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TiJianWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TiJianWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaShaWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ChaShaWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ChaShaWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="DropWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PushButton.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TitleWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ToolButton.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="safe_ch.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="safe_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\skin\0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\0_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\10_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\11_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\12_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\13.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\13_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\14.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\14_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\15.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\15_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\16.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\16_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\17.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\17_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\18.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\18_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\19.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\19_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\1_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\20.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\20_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\21.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\21_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\22.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\22_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\23.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\23_big.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\2_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\360.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\360safe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\3_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\4_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\5_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\6_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\7_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\8_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\9.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\skin\9_big.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\mainMenu\about.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\arrowDown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\arrow_down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\attention.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\auto_run.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\bg_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\bg_briangle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\bg_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\btn_use.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\caipiao.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\cloud.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\cloud_five.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\computer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\killMummyWidget\custom_scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\desktop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\desktop_0.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\desktop_1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\desktop_2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\newCharacter\desktop_3.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\expert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\killMummyWidget\fast_scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\feedback.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\feedback_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\feedback_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\fireproof.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\first_add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\killMummyWidget\full_scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\game_box.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\gongNeng.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\mainMenu\help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\mainMenu\home.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\jiaSu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\login.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\lottery.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\medal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\medal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\medal_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\medal_light.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\medal_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\menZhen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\menu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\menu_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\menu_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\min.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\min_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\min_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\mobile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\muMa.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\net_pretext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\net_repair.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\net_shop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\net_speed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\pet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\power.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\priv.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\qingLi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\qt_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\recovery.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\ren.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\renren.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\repair.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\safe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="Resources\safe.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="Resources\safe.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\safe_ch.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\safe_ch.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\safe_en.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\mainMenu\setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_left_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_left_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_right_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_right_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\shadow\shadow_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\loginDialog\sina.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\skin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\skin_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\sysButton\skin_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\tab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\toolWidget\tiJian.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\killMummyWidget\tip.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\triggerman.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\mainMenu\update.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\img\contentWidget\version.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="StackedWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TiJianWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ChaShaWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
