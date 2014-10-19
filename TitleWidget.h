@@ -20,7 +20,7 @@ signals:
 	void turnPage(int currentPage);
 
 public slots:
-	void turnPage(const QString &currentPage);
+	void slotTurnPage(int index);
 
 private:
 	void initText();

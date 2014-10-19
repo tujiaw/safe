@@ -14,13 +14,13 @@ void PushButton::setPicName(const QStringList &pics)
 	this->setFixedSize(QPixmap(pics_[0]).size());
 }
 
-void PushButton::enterEvent(QEvent *event)
+void PushButton::enterEvent(QEvent *)
 {
 	status_ = ENTER;
 	update();
 }
 
-void PushButton::leaveEvent(QEvent *event)
+void PushButton::leaveEvent(QEvent *)
 {
 	status_ = NORMAL;
 	update();
@@ -43,11 +43,15 @@ void PushButton::mouseReleaseEvent(QMouseEvent *event)
 
 	if (status_ == RELEASE && this->rect().contains(event->pos())) {
 		emit clicked();
-	}
+	} 
 }
 
-void PushButton::paintEvent(QPaintEvent *event)
+void PushButton::paintEvent(QPaintEvent *)
 {
+	if (pics_.size() == 0) {
+		return;
+	}
+
 	QPainter painter(this);
 	QPixmap pixmap;
 	switch (status_) {
@@ -70,6 +74,8 @@ void PushButton::paintEvent(QPaintEvent *event)
 	case RELEASE:
 		if (pics_.size() > 3) {
 			pixmap.load(pics_[3]);
+		} else if (pics_.size() > 1) {
+			pixmap.load(pics_[1]);
 		}
 		break;
 

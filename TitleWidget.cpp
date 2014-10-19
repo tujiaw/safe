@@ -52,9 +52,10 @@ TitleWidget::TitleWidget(QWidget *parent)
 		ToolButton *tb = new ToolButton(strList.at(i));
 		btnList_.append(tb);
 		connect(tb, SIGNAL(clicked()), mapper, SLOT(map()));
+		mapper->setMapping(tb, i);
 		buttonLayout->addWidget(tb, 0, Qt::AlignBottom);
 	}
-	connect(mapper, SIGNAL(mapped(QString)), this, SLOT(turnPage(QString)));
+	connect(mapper, SIGNAL(mapped(int)), this, SLOT(slotTurnPage(int)));
 
 	safe360Label_ = new QLabel();
 	safeLabel_ = new QLabel();
@@ -104,14 +105,8 @@ TitleWidget::TitleWidget(QWidget *parent)
 }
 
 
-void TitleWidget::turnPage(const QString &currentPage)
+void TitleWidget::slotTurnPage(int index)
 {
-	bool isOk;
-	int index = currentPage.toInt(&isOk, 10);
-	if (!isOk) {
-		return;
-	}
-
 	for (int i=0; i<btnList_.count(); i++) {
 		ToolButton *tb = btnList_.at(i);
 		if (index == i) {

@@ -112,6 +112,7 @@ QPushButton *createPrivButton(const QString &pixmapPath)
 	QPixmap pixmap(pixmapPath);
 	btn->setIcon(pixmap);
 	btn->setFixedSize(pixmap.size());
+	btn->setCursor(Qt::PointingHandCursor);
 	return btn;
 }
 

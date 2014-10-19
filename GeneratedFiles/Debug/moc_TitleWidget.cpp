@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_TitleWidget_t {
-    QByteArrayData data[8];
-    char stringdata[76];
+    QByteArrayData data[10];
+    char stringdata[95];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,11 +36,13 @@ QT_MOC_LITERAL(3, 22, 7),
 QT_MOC_LITERAL(4, 30, 12),
 QT_MOC_LITERAL(5, 43, 11),
 QT_MOC_LITERAL(6, 55, 8),
-QT_MOC_LITERAL(7, 64, 11)
+QT_MOC_LITERAL(7, 64, 11),
+QT_MOC_LITERAL(8, 76, 12),
+QT_MOC_LITERAL(9, 89, 5)
     },
     "TitleWidget\0showSkin\0\0showMin\0"
     "showMainMenu\0closeWidget\0turnPage\0"
-    "currentPage"
+    "currentPage\0slotTurnPage\0index"
 };
 #undef QT_MOC_LITERAL
 
@@ -65,7 +67,7 @@ static const uint qt_meta_data_TitleWidget[] = {
        6,    1,   48,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       6,    1,   51,    2, 0x0a /* Public */,
+       8,    1,   51,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -75,7 +77,7 @@ static const uint qt_meta_data_TitleWidget[] = {
     QMetaType::Void, QMetaType::Int,    7,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void, QMetaType::Int,    9,
 
        0        // eod
 };
@@ -90,7 +92,7 @@ void TitleWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 2: _t->showMainMenu(); break;
         case 3: _t->closeWidget(); break;
         case 4: _t->turnPage((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->turnPage((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 5: _t->slotTurnPage((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

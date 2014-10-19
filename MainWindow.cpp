@@ -36,14 +36,23 @@ MainWindow::MainWindow(QWidget *parent)
 	this->setLayout(mainLayout);
 
 	connect(titleWidget_, SIGNAL(closeWidget()), this, SLOT(close()));
+	connect(titleWidget_, SIGNAL(turnPage(int)), this, SLOT(slotTurnPage(int)));
 
-	titleWidget_->turnPage("0");
+	titleWidget_->slotTurnPage(0);
+	slotTurnPage(0);
 	bgName_ = DEFAULT_SKIN;
 }
 
 MainWindow::~MainWindow()
 {
 
+}
+
+void MainWindow::slotTurnPage(int index)
+{
+	if (index < stackedWidget_->count()) {
+		stackedWidget_->setCurrentIndex(index);
+	}
 }
 
 void MainWindow::paintEvent(QPaintEvent *event)

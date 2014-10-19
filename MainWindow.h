@@ -16,6 +16,9 @@ public:
 	explicit MainWindow(QWidget *parent = 0);
 	~MainWindow();
 
+private slots:
+	void slotTurnPage(int index);
+
 protected:
 	void paintEvent(QPaintEvent *event);
 
