@@ -8,6 +8,7 @@
 #include "TiJianWidget.h"
 #include "ChaShaWidget.h"
 #include "MainMenu.h"
+#include "SettingDialog.h"
 #include "About.h"
 #include "Common.h"
 
@@ -43,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(titleWidget_, SIGNAL(turnPage(int)), this, SLOT(slotTurnPage(int)));
 
 	connect(mainMenu_, SIGNAL(sigAboutUs()), this, SLOT(slotShowAbout()));
+	connect(mainMenu_, SIGNAL(sigSetting()), this, SLOT(slotShowSettingDialog()));
 
 	titleWidget_->slotTurnPage(0);
 	slotTurnPage(0);
@@ -60,6 +62,12 @@ void MainWindow::slotShowMainMenu()
 	point.setX(point.x() - 84);
 	point.setY(point.y() + 25);
 	mainMenu_->exec(this->mapToGlobal(point));
+}
+
+void MainWindow::slotShowSettingDialog()
+{
+	SettingDialog dlg(this);
+	dlg.exec();
 }
 
 void MainWindow::slotShowAbout()

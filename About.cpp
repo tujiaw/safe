@@ -54,8 +54,8 @@ About::About(QWidget *parent)
 	okButton->setObjectName("okButton");
 
 	QHBoxLayout *titleLayout = new QHBoxLayout();
-	titleLayout->addWidget(titleIconLabel, 0, Qt::AlignVCenter);
-	titleLayout->addWidget(titleLabel, 0, Qt::AlignVCenter);
+	titleLayout->addWidget(titleIconLabel);
+	titleLayout->addWidget(titleLabel);
 	titleLayout->addStretch();
 	titleLayout->addWidget(closeButton, 0, Qt::AlignTop);
 	titleLayout->setSpacing(5);

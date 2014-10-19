@@ -153,6 +153,15 @@
     <ClCompile Include="GeneratedFiles\Release\moc_About.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SettingDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SettingDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
@@ -660,6 +669,9 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="About.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SettingDialog.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
