@@ -7,6 +7,7 @@
 #include "StackedWidget.h"
 #include "TiJianWidget.h"
 #include "ChaShaWidget.h"
+#include "MainMenu.h"
 #include "Common.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -22,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
 	stackedWidget_->addWidget(chashaWidget_);
 
 	titleWidget_ = new TitleWidget();
+	mainMenu_ = new MainMenu(this);
 
 	QVBoxLayout *centerLayout = new QVBoxLayout();
 	centerLayout->addWidget(stackedWidget_);
@@ -35,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
 	mainLayout->setContentsMargins(SHADOW_WIDTH, SHADOW_WIDTH, SHADOW_WIDTH, SHADOW_WIDTH);
 	this->setLayout(mainLayout);
 
+	connect(titleWidget_, SIGNAL(showMainMenu()), this, SLOT(slotShowMainMenu()));
 	connect(titleWidget_, SIGNAL(closeWidget()), this, SLOT(close()));
 	connect(titleWidget_, SIGNAL(turnPage(int)), this, SLOT(slotTurnPage(int)));
 
@@ -46,6 +49,14 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
 
+}
+
+void MainWindow::slotShowMainMenu()
+{
+	QPoint point = this->rect().topRight();
+	point.setX(point.x() - 84);
+	point.setY(point.y() + 25);
+	mainMenu_->exec(this->mapToGlobal(point));
 }
 
 void MainWindow::slotTurnPage(int index)

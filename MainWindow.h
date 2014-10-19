@@ -7,6 +7,7 @@ class TitleWidget;
 class StackedWidget;
 class TiJianWidget;
 class ChaShaWidget;
+class MainMenu;
 
 class MainWindow : public DropWidget
 {
@@ -17,6 +18,7 @@ public:
 	~MainWindow();
 
 private slots:
+	void slotShowMainMenu();
 	void slotTurnPage(int index);
 
 protected:
@@ -28,6 +30,7 @@ private:
 	ChaShaWidget *chashaWidget_;
 	TitleWidget *titleWidget_;
 	QString bgName_;
+	MainMenu *mainMenu_;
 };
 
 #endif // MAINWINDOW_H_
