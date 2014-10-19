@@ -2,6 +2,49 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="../About.cpp" line="21"/>
+        <source>title</source>
+        <translation>360安全卫士</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="27"/>
+        <source>close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="30"/>
+        <source>360 safe</source>
+        <translation>360安全卫士</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="35"/>
+        <source>infoLabel</source>
+        <translation>杀木马 防盗号 电脑加速</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="41"/>
+        <source>version</source>
+        <translation>主程序版本：</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="42"/>
+        <source>mummy</source>
+        <translation>备用木马库：</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="43"/>
+        <source>copyright</source>
+        <translation>Copyright(c) 360.cn Inc. All Rights Reserved.</translation>
+    </message>
+    <message>
+        <location filename="../About.cpp" line="51"/>
+        <source>ok</source>
+        <translation>确定</translation>
+    </message>
+</context>
+<context>
     <name>ChaShaWidget</name>
     <message>
         <location filename="../ChaShaWidget.cpp" line="35"/>

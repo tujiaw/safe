@@ -19,6 +19,7 @@ public:
 
 private slots:
 	void slotShowMainMenu();
+	void slotShowAbout();
 	void slotTurnPage(int index);
 
 protected:

@@ -8,6 +8,7 @@
 #include "TiJianWidget.h"
 #include "ChaShaWidget.h"
 #include "MainMenu.h"
+#include "About.h"
 #include "Common.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -41,6 +42,8 @@ MainWindow::MainWindow(QWidget *parent)
 	connect(titleWidget_, SIGNAL(closeWidget()), this, SLOT(close()));
 	connect(titleWidget_, SIGNAL(turnPage(int)), this, SLOT(slotTurnPage(int)));
 
+	connect(mainMenu_, SIGNAL(sigAboutUs()), this, SLOT(slotShowAbout()));
+
 	titleWidget_->slotTurnPage(0);
 	slotTurnPage(0);
 	bgName_ = DEFAULT_SKIN;
@@ -57,6 +60,12 @@ void MainWindow::slotShowMainMenu()
 	point.setX(point.x() - 84);
 	point.setY(point.y() + 25);
 	mainMenu_->exec(this->mapToGlobal(point));
+}
+
+void MainWindow::slotShowAbout()
+{
+	About about(this);
+	about.exec();
 }
 
 void MainWindow::slotTurnPage(int index)
