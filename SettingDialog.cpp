@@ -4,6 +4,9 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QTabWidget>
+#include <QGroupBox>
+#include <QRadioButton>
+#include <QCheckBox>
 #include <QPainter>
 #include "Common.h"
 #include "PushButton.h"
@@ -16,9 +19,11 @@ SettingDialog::SettingDialog(QWidget *parent)
 	QVBoxLayout *mainLayout = new QVBoxLayout();
 	mainLayout->addLayout(createTitleLayout());
 	mainLayout->addWidget(createContentWidget());
+	mainLayout->addStretch();
 	mainLayout->addLayout(createBottomLayout());
-	mainLayout->setSpacing(5);
-	mainLayout->setContentsMargins(0, 0, 0, 0);
+	mainLayout->addStretch();
+	mainLayout->setSpacing(0);
+	mainLayout->setContentsMargins(SHADOW_WIDTH, SHADOW_WIDTH, SHADOW_WIDTH, SHADOW_WIDTH);
 	this->setLayout(mainLayout);
 }
 
@@ -55,7 +60,7 @@ QHBoxLayout *SettingDialog::createTitleLayout()
 	layout->addStretch();
 	layout->addWidget(closeButton, 0, Qt::AlignTop);
 	layout->setSpacing(5);
-	layout->setContentsMargins(10, 5, 5, 10);
+	layout->setContentsMargins(10, 0, 0, 10);
 
 	return layout;
 }
@@ -63,11 +68,81 @@ QHBoxLayout *SettingDialog::createTitleLayout()
 QTabWidget *SettingDialog::createContentWidget()
 {
 	QTabWidget *tabWidget = new QTabWidget();
+	tabWidget->setFixedSize(this->width(), 320);
+
+	QWidget *upgradePathTab = new QWidget();
+	QWidget *advanceSettingTab = new QWidget();
+	QWidget *experienceSettingTab = new QWidget();
+	QWidget *userSettingTab = new QWidget();
+	QWidget *improvePlanTab = new QWidget();
+	QWidget *cloudSafePlanTab = new QWidget();
+
+	QGroupBox *upgradePathGroupBox = new QGroupBox();
+	upgradePathGroupBox->setTitle(tr("rise style title"));
+	QFont upgradePathFont = upgradePathGroupBox->font();
+	upgradePathFont.setBold(true);
+	upgradePathGroupBox->setFont(upgradePathFont);
+	upgradePathGroupBox->setFixedSize(480, 250);
+
+	QRadioButton *autoRiseRadioButton = new QRadioButton(tr("auto rise"));
+	QRadioButton *noAutoRiseRadioButton = new QRadioButton(tr("not auto rise"));
+	QCheckBox *riseMummyCheckBox = new QCheckBox(tr("rise mummy"));
+	QCheckBox *gameCheckBox = new QCheckBox(tr("game"));
+	QCheckBox *g3CheckBox = new QCheckBox(tr("3g"));
+	QCheckBox *p2pCheckBox = new QCheckBox(tr("p2p"));
+	QCheckBox *bakMummyCheckBox = new QCheckBox(tr("mymmy"));
+
+	QHBoxLayout *riseMummyLayout = new QHBoxLayout();
+	riseMummyLayout->addWidget(riseMummyCheckBox);
+	riseMummyLayout->setSpacing(0);
+	riseMummyLayout->setContentsMargins(20, 0, 0, 0);
+
+	QVBoxLayout *groupLayout = new QVBoxLayout();
+	groupLayout->addWidget(autoRiseRadioButton);
+	groupLayout->addWidget(noAutoRiseRadioButton);
+	groupLayout->addLayout(riseMummyLayout);
+	groupLayout->addWidget(gameCheckBox);
+	groupLayout->addWidget(g3CheckBox);
+	groupLayout->addWidget(p2pCheckBox);
+	groupLayout->addWidget(bakMummyCheckBox);
+	groupLayout->setSpacing(0);
+	groupLayout->setContentsMargins(30, 0, 0, 0);
+	upgradePathGroupBox->setLayout(groupLayout);
+	
+	QHBoxLayout *mainLayout = new QHBoxLayout();
+	mainLayout->addWidget(upgradePathGroupBox);
+	mainLayout->setSpacing(0);
+	mainLayout->setContentsMargins(0, 0, 0, 0);
+	upgradePathTab->setLayout(mainLayout);
+
+	tabWidget->addTab(upgradePathTab, tr("rise style"));
+	tabWidget->addTab(advanceSettingTab, tr("advanced setting"));
+	tabWidget->addTab(experienceSettingTab, tr("physical setting"));
+	tabWidget->addTab(userSettingTab, tr("user setting"));
+	tabWidget->addTab(improvePlanTab, tr("improve program"));
+	tabWidget->addTab(cloudSafePlanTab, tr("secure program"));
 	return tabWidget;
 }
 
 QHBoxLayout *SettingDialog::createBottomLayout()
 {
-	QHBoxLayout *layout = new QHBoxLayout();
-	return layout;
+	QPushButton *okButton = new QPushButton(tr("ok"));
+	okButton->setObjectName("okButton");
+	okButton->setFixedSize(75, 25);
+
+	QPushButton *cancelButton = new QPushButton(tr("cancel"));
+	cancelButton->setObjectName("okButton");
+	cancelButton->setFixedSize(75, 25);
+
+	QHBoxLayout *mainLayout = new QHBoxLayout();
+	mainLayout->addStretch();
+	mainLayout->addWidget(okButton);
+	mainLayout->addWidget(cancelButton);
+	mainLayout->setSpacing(20);
+	mainLayout->setContentsMargins(0, 10, 20, 20);
+
+	connect(okButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	return mainLayout;
 }

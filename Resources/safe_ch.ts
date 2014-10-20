@@ -126,6 +126,99 @@
     </message>
 </context>
 <context>
+    <name>SettingDialog</name>
+    <message>
+        <location filename="../SettingDialog.cpp" line="47"/>
+        <source>360 safe setting</source>
+        <translation>360安全卫士-设置</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="52"/>
+        <source>close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="78"/>
+        <source>rise style title</source>
+        <translation>升级方式</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="84"/>
+        <source>auto rise</source>
+        <translation>自动升级主程序和备用木马库到最新版</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="85"/>
+        <source>not auto rise</source>
+        <translation>不自动升级</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="86"/>
+        <source>rise mummy</source>
+        <translation>不升级主程序，但任然升级备用木马库</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="87"/>
+        <source>game</source>
+        <translation>游戏时不升级</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="88"/>
+        <source>3g</source>
+        <translation>3G上网时不升级</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="89"/>
+        <source>p2p</source>
+        <translation>使用P22/P2S技术为程序升级加速</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="90"/>
+        <source>mymmy</source>
+        <translation>备用木马库升级完成后在右下角提示</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="115"/>
+        <source>rise style</source>
+        <translation>升级方式</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="116"/>
+        <source>advanced setting</source>
+        <translation>高级设置</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="117"/>
+        <source>physical setting</source>
+        <translation>体验设置</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="118"/>
+        <source>user setting</source>
+        <translation>用户设置</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="119"/>
+        <source>improve program</source>
+        <translation>改善计划</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="120"/>
+        <source>secure program</source>
+        <translation>云安全计划</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="126"/>
+        <source>ok</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="../SettingDialog.cpp" line="130"/>
+        <source>cancel</source>
+        <translation>取消</translation>
+    </message>
+</context>
+<context>
     <name>TiJianWidget</name>
     <message>
         <location filename="../TiJianWidget.cpp" line="60"/>
