@@ -13,7 +13,7 @@
 #include "Common.h"
 
 MainWindow::MainWindow(QWidget *parent)
-	: DropWidget(parent)
+	: DropWidget(parent, true)
 {
 	this->setMinimumSize(900, 600);
 	this->setWindowIcon(QIcon(":/img/safe"));
