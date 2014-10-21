@@ -66,7 +66,7 @@ bool DropWidget::nativeEvent(const QByteArray & eventType, void * message, long 
 	}
 
 	Q_UNUSED(eventType);
-    const int HIT_BORDER = 15;
+    const int HIT_BORDER = 20;
     const MSG *msg=static_cast<MSG*>(message);
     if(msg->message == WM_NCHITTEST) {
         int xPos = ((int)(short)LOWORD(msg->lParam)) - this->frameGeometry().x();
