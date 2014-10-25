@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'TitleBar.h'
+** Meta object code from reading C++ file 'CustomFrame.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../TitleBar.h"
+#include "../../CustomFrame.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'TitleBar.h' doesn't include <QObject>."
+#error "The header file 'CustomFrame.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.3.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,27 +18,28 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_TitleBar_t {
+struct qt_meta_stringdata_CustomFrame_t {
     QByteArrayData data[4];
-    char stringdata[35];
+    char stringdata[46];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_TitleBar_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_CustomFrame_t, stringdata) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_TitleBar_t qt_meta_stringdata_TitleBar = {
+static const qt_meta_stringdata_CustomFrame_t qt_meta_stringdata_CustomFrame = {
     {
-QT_MOC_LITERAL(0, 0, 8),
-QT_MOC_LITERAL(1, 9, 9),
-QT_MOC_LITERAL(2, 19, 0),
-QT_MOC_LITERAL(3, 20, 14)
+QT_MOC_LITERAL(0, 0, 11),
+QT_MOC_LITERAL(1, 12, 13),
+QT_MOC_LITERAL(2, 26, 0),
+QT_MOC_LITERAL(3, 27, 18)
     },
-    "TitleBar\0showSmall\0\0showMaxRestore"
+    "CustomFrame\0slotShowSmall\0\0"
+    "slotShowMaxRestore"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_TitleBar[] = {
+static const uint qt_meta_data_CustomFrame[] = {
 
  // content:
        7,       // revision
@@ -62,41 +63,41 @@ static const uint qt_meta_data_TitleBar[] = {
        0        // eod
 };
 
-void TitleBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void CustomFrame::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        TitleBar *_t = static_cast<TitleBar *>(_o);
+        CustomFrame *_t = static_cast<CustomFrame *>(_o);
         switch (_id) {
-        case 0: _t->showSmall(); break;
-        case 1: _t->showMaxRestore(); break;
+        case 0: _t->slotShowSmall(); break;
+        case 1: _t->slotShowMaxRestore(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObject TitleBar::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_TitleBar.data,
-      qt_meta_data_TitleBar,  qt_static_metacall, 0, 0}
+const QMetaObject CustomFrame::staticMetaObject = {
+    { &QFrame::staticMetaObject, qt_meta_stringdata_CustomFrame.data,
+      qt_meta_data_CustomFrame,  qt_static_metacall, 0, 0}
 };
 
 
-const QMetaObject *TitleBar::metaObject() const
+const QMetaObject *CustomFrame::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *TitleBar::qt_metacast(const char *_clname)
+void *CustomFrame::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_TitleBar.stringdata))
-        return static_cast<void*>(const_cast< TitleBar*>(this));
-    return QWidget::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_CustomFrame.stringdata))
+        return static_cast<void*>(const_cast< CustomFrame*>(this));
+    return QFrame::qt_metacast(_clname);
 }
 
-int TitleBar::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int CustomFrame::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QFrame::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

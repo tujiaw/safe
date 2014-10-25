@@ -4,9 +4,10 @@
 #include <QFile>
 #include <QMessageBox>
 #include "MainWindow.h"
-#include "TitleBar.h"
 #include <QVBoxLayout>
 #include "TiJianWidget.h"
+#include "CustomFrame.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
 		//mainWindow.show();
 
 		TiJianWidget *tijian = new TiJianWidget();
-		Frame frame(tijian);
+		CustomFrame frame(tijian, QStringLiteral("½¡¿µÌå¼ì"));
 		frame.show();
 
 		return a.exec();

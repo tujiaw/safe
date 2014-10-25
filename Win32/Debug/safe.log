@@ -1,28 +1,24 @@
-﻿生成启动时间为 2014/10/25 15:37:26。
+﻿生成启动时间为 2014/10/25 23:40:10。
      1>项目“F:\CppProject\safe\safe\safe.vcxproj”在节点 2 上(Build 个目标)。
-     1>CustomBuild:
-         Moc'ing TitleBar.h...
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IGeneratedFiles /I. /IGeneratedFiles\Debug /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtWidgets /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtCore /IGeneratedFiles\debug /I"C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_WIDGETS_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 GeneratedFiles\Debug\moc_TitleBar.cpp main.cpp
-         moc_TitleBar.cpp
-     1>f:\cppproject\safe\safe\generatedfiles\debug\../../TitleBar.h(190): warning C4100: “e”: 未引用的形参
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IGeneratedFiles /I. /IGeneratedFiles\Debug /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtWidgets /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtCore /IGeneratedFiles\debug /I"C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_WIDGETS_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 main.cpp
          main.cpp
-     1>f:\cppproject\safe\safe\TitleBar.h(190): warning C4100: “e”: 未引用的形参
-         正在生成代码...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Win32\Debug\\safe.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib\qtmaind.lib C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib\Qt5Cored.lib C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib\Qt5Widgetsd.lib C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib\Qt5Guid.lib C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\Win32\Debug\safe.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\About.obj
          Win32\Debug\ChaShaWidget.obj
+         Win32\Debug\CustomFrame.obj
          Win32\Debug\DropWidget.obj
          Win32\Debug\moc_About.obj
          Win32\Debug\moc_ChaShaWidget.obj
+         Win32\Debug\moc_CustomFrame.obj
          Win32\Debug\moc_DropWidget.obj
          Win32\Debug\moc_MainMenu.obj
          Win32\Debug\moc_MainWindow.obj
          Win32\Debug\moc_PushButton.obj
          Win32\Debug\moc_SettingDialog.obj
          Win32\Debug\moc_StackedWidget.obj
+         Win32\Debug\moc_test2.obj
          Win32\Debug\moc_TiJianWidget.obj
-         Win32\Debug\moc_TitleBar.obj
          Win32\Debug\moc_TitleWidget.obj
          Win32\Debug\moc_ToolButton.obj
          Win32\Debug\qrc_safe.obj
@@ -31,6 +27,7 @@
          Win32\Debug\PushButton.obj
          Win32\Debug\SettingDialog.obj
          Win32\Debug\StackedWidget.obj
+         Win32\Debug\test2.obj
          Win32\Debug\TiJianWidget.obj
          Win32\Debug\TitleWidget.obj
          Win32\Debug\ToolButton.obj
@@ -40,4 +37,4 @@
 
 生成成功。
 
-已用时间 00:00:06.53
+已用时间 00:00:02.07
