@@ -40,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent)
 	this->setLayout(mainLayout);
 
 	connect(titleWidget_, SIGNAL(showMainMenu()), this, SLOT(slotShowMainMenu()));
+	connect(titleWidget_, SIGNAL(showSkin()), this, SLOT(slotShowSkin()));
 	connect(titleWidget_, SIGNAL(closeWidget()), this, SLOT(close()));
 	connect(titleWidget_, SIGNAL(turnPage(int)), this, SLOT(slotTurnPage(int)));
 
@@ -62,6 +63,11 @@ void MainWindow::slotShowMainMenu()
 	point.setX(point.x() - 84);
 	point.setY(point.y() + 25);
 	mainMenu_->exec(this->mapToGlobal(point));
+}
+
+void MainWindow::slotShowSkin()
+{
+	this->showMaximized();
 }
 
 void MainWindow::slotShowSettingDialog()

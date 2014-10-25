@@ -4,6 +4,9 @@
 #include <QFile>
 #include <QMessageBox>
 #include "MainWindow.h"
+#include "TitleBar.h"
+#include <QVBoxLayout>
+#include "TiJianWidget.h"
 
 int main(int argc, char *argv[])
 {
@@ -36,8 +39,13 @@ int main(int argc, char *argv[])
 	}
 
 	if (first && second && third) {
-		MainWindow mainWindow;
-		mainWindow.show();
+		//MainWindow mainWindow;
+		//mainWindow.show();
+
+		TiJianWidget *tijian = new TiJianWidget();
+		Frame frame(tijian);
+		frame.show();
+
 		return a.exec();
 	} else {
 		QMessageBox::information(NULL, "error", "init failed");
